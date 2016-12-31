@@ -73,6 +73,7 @@ void Window::initData()
 
 void Window::initTexture()
 {
+    //创建纹理//纹理路径//
     texture = new QOpenGLTexture(QImage("f:/qq.jpg").mirrored());
     texture->setMinificationFilter(QOpenGLTexture::LinearMipMapLinear);
     texture->setMagnificationFilter(QOpenGLTexture::Linear);
